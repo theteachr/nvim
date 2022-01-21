@@ -34,7 +34,7 @@ local function get_base()
 		ErrorMsg = { fg = cp.red, style = "bold,italic" }, -- error messages on the command line
 		VertSplit = { fg = cp.black0 }, -- the column separating vertically split windows
 		Folded = { fg = cp.gray0, bg = cp.black2 }, -- line used for closed folds
-		FoldColumn = { bg = cp.black2, fg = cp.gray0 }, -- 'foldcolumn'
+		FoldColumn = { bg = cp.mauve, fg = cp.gray0 }, -- 'foldcolumn'
 		SignColumn = { bg = cnf.transparent_background and cp.none or cp.black2, fg = cp.black4 }, -- column where |signs| are displayed
 		SignColumnSB = { bg = cp.black0, fg = cp.black4 }, -- column where |signs| are displayed
 		Substitute = { bg = cp.black4, fg = cp.pink }, -- |:substitute| replacement text highlighting
