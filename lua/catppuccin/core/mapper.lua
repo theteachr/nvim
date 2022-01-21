@@ -33,7 +33,7 @@ local function get_base()
 		EndOfBuffer = { fg = cp.black2 }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
 		ErrorMsg = { fg = cp.red, style = "bold,italic" }, -- error messages on the command line
 		VertSplit = { fg = cp.black0 }, -- the column separating vertically split windows
-		Folded = { fg = cp.blue, bg = cp.black4 }, -- line used for closed folds
+		Folded = { fg = cp.gray0, bg = cp.black2 }, -- line used for closed folds
 		FoldColumn = { bg = cp.black2, fg = cp.gray0 }, -- 'foldcolumn'
 		SignColumn = { bg = cnf.transparent_background and cp.none or cp.black2, fg = cp.black4 }, -- column where |signs| are displayed
 		SignColumnSB = { bg = cp.black0, fg = cp.black4 }, -- column where |signs| are displayed
@@ -41,7 +41,7 @@ local function get_base()
 		LineNr = { fg = cp.black4 }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is secp.
 		CursorLineNr = { fg = cp.green }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
 		MatchParen = { fg = cp.peach, style = "bold" }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-		ModeMsg = { fg = cp.white, style = "bold" }, -- 'showmode' message (e.g., "-- INSERT -- ")
+		ModeMsg = { fg = cp.mauve, style = "bold" }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		MsgArea = { fg = cp.white }, -- Area for messages and cmdline
 		MsgSeparator = {}, -- Separator for scrolled messages, `msgsep` flag of 'display'
 		MoreMsg = { fg = cp.blue }, -- |more-prompt|
